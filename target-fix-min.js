@@ -1,0 +1,1 @@
+for(var rel,anchors=document.querySelectorAll("a[target]"),i=0;i<anchors.length;i++)anchors[i].hasAttribute("rel")&&(rel=anchors[i].getAttribute("rel").replace(/noopener/g,"").replace(/noreferrer/g,"").replace(/^\s+|\s+$/gm,"")),anchors[i].setAttribute("rel","noopener noreferrer"+(rel?" "+rel:""));
